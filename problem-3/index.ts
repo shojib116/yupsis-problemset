@@ -74,7 +74,7 @@ async function processPayment(payment: Transaction, attemptCount: number) {
   } 
   
   const nextAttempt = attemptCount + 1;
-  if (nextAttempt > maxRetry) {
+  if (nextAttempt >= maxRetry) {
     console.log(
       "Retry limit reached for trxId=", payment.id, ". Aborting payment!"
     );
