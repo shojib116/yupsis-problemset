@@ -17,6 +17,7 @@ console.log(result);
 function exchangeMutki(mojo) {
   let leftOverMutki = mojo;
   let totalMojo = mojo;
+  // Time Complexity will be logarithmic
   while (leftOverMutki >= 3) {
     let exchangedMojo = Math.floor(leftOverMutki / 3);
     leftOverMutki = leftOverMutki % 3;
